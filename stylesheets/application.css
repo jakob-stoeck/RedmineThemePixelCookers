@@ -239,7 +239,7 @@
 }
 body {
   font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
-  background: #f3f3f3 url(../images/bg-body.png) repeat-y scroll left top;
+  background-color: #F3F3F3;
   color: #555555;
 }
 #wrapper {
@@ -296,11 +296,10 @@ a.issue.closed:visited {
   z-index: 60;
 }
 #header a {
-  color: #CCCCCC;
+  color: #333;
 }
 #header a:hover {
-  color: #fff;
-  text-decoration: none;
+  color: #333;
 }
 #header input[type="text"],
 #header select {
@@ -319,9 +318,7 @@ a.issue.closed:visited {
   width: 120px;
 }
 #top-menu {
-  background: #0071BC;
-  border-bottom: 1px solid #858586;
-  outline: 1px solid #3b3a3b;
+  background: #333;
   font-size: 11px;
   height: 30px;
   padding: 0;
@@ -359,13 +356,12 @@ a.issue.closed:visited {
   z-index: 999;
 }
 #top-menu #loggedas a {
-  color: #ccc;
+  color: #333;
   font-weight: normal;
   margin: 0;
 }
 #top-menu #loggedas a:hover {
-  color: #fff;
-  text-decoration: none;
+  color: #333;
 }
 #main {
   background: none;
@@ -388,28 +384,7 @@ a.issue.closed:visited {
   width: 15%;
 }
 #footer {
-  background-color: #EEEEEE;
-  border-top: 1px solid #CCCCCC;
-  clear: left;
-  color: #666666;
-  font-size: 9px;
-  margin: 40px 30px 0 255px;
-  padding: 15px 0;
-  text-align: left;
-}
-#footer a {
-  color: #0071BC;
-}
-#footer a:link,
-#footer a:visited {
-  color: #0071BC;
-}
-#footer a:hover {
-  color: #000;
-  text-decoration: none;
-}
-#footer .bgr:after {
-  content: "| Theme by Pixel Cookers";
+  display: none;
 }
 /* Headers */
 #content h2,
@@ -513,51 +488,33 @@ h4 {
   margin: 0;
   padding-bottom: 10px;
   text-align: right;
+  background: none;
 }
 #main-menu ul li a {
-  -webkit-border-radius: 5px 0 0 5px;
-  -moz-border-radius: 5px 0 0 5px;
-  border-radius: 5px 0 0 5px;
-  -webkit-box-shadow: -2px 1px 2px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: -2px 1px 2px rgba(0, 0, 0, 0.5);
-  box-shadow: -2px 1px 2px rgba(0, 0, 0, 0.5);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
   border: none;
-  color: #fff;
+  color: #333;
   cursor: pointer;
   display: block;
   font-size: 14px;
   font-weight: normal;
   padding: 10px 15px;
-  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25), -2px 0 1px rgba(0, 0, 0, 0.25);
 }
 #main-menu ul li a:hover {
-  -webkit-transition: padding-right 200ms linear;
-  -moz-transition: padding-right 200ms linear;
-  -ms-transition: padding-right 200ms linear;
-  -o-transition: padding-right 200ms linear;
-  transition: padding-right 200ms linear;
-  padding-right: 25px;
-}
-#main-menu ul li a:active {
-  -webkit-box-shadow: inset 2px 1px 2px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: inset 2px 1px 2px rgba(0, 0, 0, 0.5);
-  box-shadow: inset 2px 1px 2px rgba(0, 0, 0, 0.5);
-  /* IE only stuff */
-
-  border-bottom: 0\9;
-  border-top: 1px solid #666\9;
+  background-color: transparent;
+  text-decoration: underline;
+  color: #333;
 }
 #main-menu ul li a.selected,
 #main-menu ul li a.selected:hover {
   background: #f3f3f3;
-  color: #333333;
+  color: #333;
   font-weight: bold;
-  text-shadow: none;
+  text-decoration: underline;
 }
 /* Tables */
 table.list {
@@ -832,9 +789,9 @@ input[type='submit'] {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -967,7 +924,8 @@ div.flash.error,
 }
 /* Issues */
 div.issue {
-  background: #F5FCFC;
+  background: #fff;
+  border: none;
 }
 div.issue.priority-3,
 div.issue.priority-4 {
@@ -1368,33 +1326,7 @@ a:visited,
 #footer a:visited {
   color: #0071bc;
 }
-/* Top bar */
-#top-menu {
-  background-color: #0071bc;
-}
 /* Buttons */
-#main-menu ul li a {
-  background-color: #367eb7;
-  background-image: -moz-linear-gradient(top, #498bbf, #1a6cac);
-  background-image: -ms-linear-gradient(top, #498bbf, #1a6cac);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#498bbf), to(#1a6cac));
-  background-image: -webkit-linear-gradient(top, #498bbf, #1a6cac);
-  background-image: -o-linear-gradient(top, #498bbf, #1a6cac);
-  background-image: linear-gradient(top, #498bbf, #1a6cac);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#498bbf', endColorstr='#1a6cac', GradientType=0);
-}
-#main-menu ul li a:hover {
-  background-color: #367eb7;
-  background-image: -moz-linear-gradient(top, #498bbf, #1a6cac);
-  background-image: -ms-linear-gradient(top, #498bbf, #1a6cac);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#498bbf), to(#1a6cac));
-  background-image: -webkit-linear-gradient(top, #498bbf, #1a6cac);
-  background-image: -o-linear-gradient(top, #498bbf, #1a6cac);
-  background-image: linear-gradient(top, #498bbf, #1a6cac);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#498bbf', endColorstr='#1a6cac', GradientType=0);
-}
 input[type="submit"] {
   background-color: #367eb7;
   background-image: -moz-linear-gradient(top, #498bbf, #1a6cac);

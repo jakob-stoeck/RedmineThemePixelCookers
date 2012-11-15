@@ -9,7 +9,7 @@
 
 body {
 	.lucida;
-	background: #F3F3F3 url(../images/bg-body.png) repeat-y scroll left top;
+	background-color: #F3F3F3;
 	color: #555555;
 }
 #wrapper {
@@ -66,10 +66,9 @@ a {
 		z-index: 60;
 	}
 	a {
-		color: #CCCCCC;
+		color: #333;
 		&:hover {
-			color: #fff;
-			text-decoration: none;
+			color: #333;
 		}
 	}
 	input[type="text"], select {
@@ -87,9 +86,7 @@ a {
 	}
 }
 #top-menu {
-	background: #0071BC;
-	border-bottom: 1px solid #858586;
-	outline: 1px solid #3b3a3b;
+	background: #333;
 	font-size: 11px;
 	height: 30px;
 	padding: 0;
@@ -131,13 +128,12 @@ a {
 		z-index: 999;
 
 		a {
-			color: #ccc;
+			color: #333;
 			font-weight: normal;
 			margin: 0;
 
 			&:hover {
-				color: #fff;
-				text-decoration: none;
+				color: #333;
 			}
 		}
 	}
@@ -166,30 +162,7 @@ a {
 }
 
 #footer {
-	background-color: #EEEEEE;
-	border-top: 1px solid #CCCCCC;
-	clear: left;
-	color: #666666;
-	font-size: 9px;
-	margin: 40px 30px 0 255px;
-	padding: 15px 0;
-	text-align: left;
-}
-#footer {
-	a {
-		color: #0071BC;
-
-		&:link, &:visited {
-			color: #0071BC;
-		}
-		&:hover {
-			color: #000;
-			text-decoration: none;
-		}
-	}
-	.bgr:after {
-		content: "| Theme by Pixel Cookers";
-	}
+	display:none;
 }
 
 
@@ -204,7 +177,7 @@ a {
 		margin-bottom: 10px;
 		margin-left: -10px;
 		margin-right: -10px;
-		
+
 		&:first-of-type {
 			.border-radius(6px 6px 0 0);
 			height: 23px;
@@ -280,35 +253,28 @@ h3, h4 {
 			margin: 0;
 			padding-bottom: 10px;
 			text-align: right;
+			background: none;
 
 			a {
-				.border-radius(5px 0 0 5px);
-				.box-shadow(-2px 1px 2px rgba(0,0,0,0.5));
 				.user-select(none);
 				border: none;
-				color: #fff;
+				color: #333;
 				cursor: pointer;
 				display: block;
 				font-size: 14px;
 				font-weight: normal;
 				padding: 10px 15px;
-				text-shadow: 0 -1px 1px rgba(0,0,0,0.25), -2px 0 1px rgba(0,0,0,0.25);
 
 				&:hover {
-					.transition(padding-right 200ms linear);
-					padding-right: 25px;
-				}
-				&:active {
-					.box-shadow(inset 2px 1px 2px rgba(0,0,0,0.5));
-					/* IE only stuff */
-					border-bottom: 0\9;
-					border-top: 1px solid #666\9;
+					background-color: transparent;
+					text-decoration: underline;
+					color: #333;
 				}
 				&.selected, &.selected:hover {
 					background: #f3f3f3;
-					color: #333333;
+					color: #333;
 					font-weight: bold;
-					text-shadow: none;
+					text-decoration: underline;
 				}
 			}
 		}
@@ -422,9 +388,9 @@ option {
 }
 input#issue_subject { font-size: 200%; width: 90%; }
 
-textarea.wiki-edit { 
-	.arial; 
-	font-size: larger; 
+textarea.wiki-edit {
+	.arial;
+	font-size: larger;
 	background: #FFFFFF;
 }
 
@@ -509,7 +475,7 @@ ul{
 
 input[type='submit'] {
 	.border-radius(5px);
-	.box-shadow(0 1px 2px rgba(0,0,0,0.5));
+	.box-shadow(0 1px 1px rgba(0,0,0,0.5));
 	.user-select(none);
 	border: none;
 	color: #fff !important;
@@ -649,7 +615,8 @@ div.flash.error, #errorExplanation {
 
 /* Issues */
 div.issue {
-	background: #F5FCFC;
+	background: #fff;
+	border:none;
 
 	&.priority-3, &.priority-4 {
 		border-color: #DF8F8F
@@ -742,207 +709,6 @@ em.info.error{ background-image: url(../images/icons/exclamation.png); }
 table.members td.group { background-image: url(../images/icons/users.png); }
 input#principal_search, input#user_search {	background-image: url(../images/icons/magnifier-medium-left.png); }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .icon-add { background-image: url(../images/icons/plus-circle.png); }
 .icon-edit { background-image: url(../images/icons/pencil.png); }
 .icon-copy { background-image: url(../images/icons/documents-text.png); }
@@ -988,21 +754,21 @@ input#principal_search, input#user_search {	background-image: url(../images/icon
 		background-image: url(../images/icons/question.png) !important;
 	}
 	button {
-		&.jstb_strong{ background-image: url(../images/icons/edit-bold.png); }	
-		&.jstb_em{ background-image: url(../images/icons/edit-italic.png); }	
-		&.jstb_ins{ background-image: url(../images/icons/edit-underline.png); }	
-		&.jstb_del{ background-image: url(../images/icons/edit-strike.png); }	
-		&.jstb_code{ background-image: url(../images/icons/edit-code.png); }	
-		&.jstb_h1{ background-image: url(../images/icons/edit-heading-1.png); }	
-		&.jstb_h2{ background-image: url(../images/icons/edit-heading-2.png); }	
-		&.jstb_h3{ background-image: url(../images/icons/edit-heading-3.png); }	
-		&.jstb_ul{ background-image: url(../images/icons/edit-list.png); }	
-		&.jstb_ol{ background-image: url(../images/icons/edit-list-order.png); }	
-		&.jstb_bq{ background-image: url(../images/icons/edit-indent.png); }	
-		&.jstb_unbq{ background-image: url(../images/icons/edit-outdent.png); }	
-		//&.jstb_pre{ background-image: url(../images/icons/edit-code-division.png); }	
-		&.jstb_link{ background-image: url(../images/icons/chain.png); }	
-		&.jstb_img{ background-image: url(../images/icons/picture.png); }	
+		&.jstb_strong{ background-image: url(../images/icons/edit-bold.png); }
+		&.jstb_em{ background-image: url(../images/icons/edit-italic.png); }
+		&.jstb_ins{ background-image: url(../images/icons/edit-underline.png); }
+		&.jstb_del{ background-image: url(../images/icons/edit-strike.png); }
+		&.jstb_code{ background-image: url(../images/icons/edit-code.png); }
+		&.jstb_h1{ background-image: url(../images/icons/edit-heading-1.png); }
+		&.jstb_h2{ background-image: url(../images/icons/edit-heading-2.png); }
+		&.jstb_h3{ background-image: url(../images/icons/edit-heading-3.png); }
+		&.jstb_ul{ background-image: url(../images/icons/edit-list.png); }
+		&.jstb_ol{ background-image: url(../images/icons/edit-list-order.png); }
+		&.jstb_bq{ background-image: url(../images/icons/edit-indent.png); }
+		&.jstb_unbq{ background-image: url(../images/icons/edit-outdent.png); }
+		//&.jstb_pre{ background-image: url(../images/icons/edit-code-division.png); }
+		&.jstb_link{ background-image: url(../images/icons/chain.png); }
+		&.jstb_img{ background-image: url(../images/icons/picture.png); }
 	}
 }
 
@@ -1126,12 +892,7 @@ a.close-icon:hover {}
 a, a:link, a:visited, #sidebar a.selected { color: #0071BC }
 #footer a, #footer a:link, #footer a:visited { color: #0071BC }
 
-/* Top bar */
-#top-menu { background-color: #0071BC }
-
 /* Buttons */
-#main-menu ul li a { #gradient > .vertical(saturate(lighten(#4e83ad, 2.5%), 10%), saturate(lighten(#226498, 2.5%), 10%)); }
-#main-menu ul li a:hover { #gradient > .vertical(saturate(lighten(#4e83ad, 2.5%), 10%), saturate(lighten(#226498, 2.5%), 10%)); }
 input[type="submit"] { #gradient > .vertical(saturate(lighten(#4e83ad, 2.5%), 10%), saturate(lighten(#226498, 2.5%), 10%)); }
 
 /* Boxes */
