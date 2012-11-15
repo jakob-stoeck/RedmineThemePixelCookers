@@ -765,11 +765,27 @@ ul li li {
 ul li li li {
   background-image: url(../images/square_black.png);
 }
+ul.projects div.root a.project,
+ul.projects a {
+  float: left;
+  margin-right: 5px;
+}
 ul.projects.root li.root {
   background: none;
 }
 ul.projects li.child {
   background-position: 0 4px;
+  margin: 0;
+  clear: left;
+}
+ul.projects ul.projects {
+  border: none;
+}
+ul.projects p {
+  margin: 0;
+}
+ul.projects li {
+  background: none;
 }
 #admin-menu li {
   background: none;

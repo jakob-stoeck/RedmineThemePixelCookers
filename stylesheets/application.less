@@ -444,13 +444,33 @@ ul{
 			}
 		}
 	}
+	&.projects {
+		div.root a.project, a {
+			float: left;
+			margin-right: 5px;
+		}
 
-	&.projects.root li.root {
-		background: none;
-	}
+		&.root li.root {
+			background: none;
+		}
 
-	&.projects li.child {
-		background-position: 0 4px;
+		li.child {
+			background-position: 0 4px;
+			margin: 0;
+			clear: left;
+		}
+
+		ul.projects {
+			border: none;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		li {
+			background: none;
+		}
 	}
 }
 
